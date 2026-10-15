@@ -1,126 +1,94 @@
 # HyperLocks
 
-面向 HyperOS 的个性化 LSPosed 模块，集中管理锁屏、密码界面、状态栏、控制中心与设置界面的定制功能。
 
-作者：雪子 × 晚晚
 
-## 实机展示
 
-以下为作者在不同开发阶段提供的实机截图。按效果展示；历史截图不作为 1.6.0 的完整真机验证记录。
 
-<table>
-  <tr>
-    <th>控制中心 · 整机搭配</th>
-    <th>锁屏密码 · 数字圆环</th>
-  </tr>
-  <tr>
-    <td><img src="showcase-control-center.jpg" alt="早期魔改 HyperOS 控制中心整机搭配效果" width="300"></td>
-    <td><img src="showcase-password-rings.jpg" alt="早期密码圆环实机效果，未输入密码" width="300"></td>
-  </tr>
-  <tr>
-    <td>整机搭配参考，包含主题及其他美化，图中全部外观并非均由 HyperLocks 提供。</td>
-    <td>独立模块阶段的密码圆环效果。</td>
-  </tr>
-</table>
 
-### 通知中心
+**面向 HyperOS 的个性化 LSPosed 模块**，集中管理锁屏、密码界面、状态栏、控制中心与系统设置界面的深度定制功能。
 
-<table>
-  <tr>
-    <th>通知卡片</th>
-    <th>日期、时钟与背景</th>
-  </tr>
-  <tr>
-    <td><img src="showcase-notification-cards.jpg" alt="通知中心实机效果：圆角通知卡片与半透明背景" width="300"></td>
-    <td><img src="showcase-notification-clock.jpg" alt="通知中心实机效果：日期、大时钟、圆角面板与模糊背景" width="300"></td>
-  </tr>
-  <tr>
-    <td>通知卡片的圆角、描边与半透明效果。</td>
-    <td>日期、大时钟与圆角模糊背景，图中为无通知状态。</td>
-  </tr>
-</table>
+**作者**：雪子 × 晚晚  
+**快速导航**：[版本发布 (Releases)](https://www.google.com/search?q=https%3A%2F%2Fgithub.com%2Fhydphalen%2FHyperLocks%2Freleases) · [更新日志 (CHANGELOG.md)](https://www.google.com/search?q=.%2FCHANGELOG.md) · [校验文件 (SHA256SUMS)](https://www.google.com/search?q=.%2FSHA256SUMS) · [第三方声明 (THIRD\_PARTY\_NOTICES.md)](https://www.google.com/search?q=.%2FTHIRD_PARTY_NOTICES.md) · [开源协议 (LICENSE-HyperTweak.txt)](https://www.google.com/search?q=.%2FLICENSE-HyperTweak.txt)
+
+## 功能模块概览
+
+| 功能模块 | 核心定制方向 | 详细能力说明 |
+| :--- | :--- | :--- |
+| **锁屏定制** | 小组件、卡片与息屏控制 | 支持锁屏小组件与样式调整、卡片与布局管理、息屏显示（AOD）及其它锁屏显示项控制 |
+| **锁屏密码界面** | 数字圆环与键盘美化 | 提供锁屏密码数字圆环样式及输入键盘外观的个性化定制 |
+| **状态栏与控制中心** | 顶栏、高斯模糊与通知卡片 | 支持控制中心顶栏布局与异形修饰、背景模糊、通知卡片圆角/描边与半透明视觉效果 |
+| **系统设置增强** | 界面开关与二级页面定制 | 提供特定系统设置界面的快捷开关控制与二级页面布局定制 |
+| **日志与管理** | 运行状态诊断与导出 | 内置运行日志导出功能，自动记录模块版本、设备型号及导出时间等诊断信息 |
+
+## 实机效果展示
+
+> [!NOTE]
+> 以下实机截图由作者在不同开发阶段提供，仅按功能与视觉效果分类展示；历史开发阶段截图不作为 `1.6.0` 版本的完整真机验证记录。
+
+### 控制中心与密码界面
+
+| 控制中心 · 整机搭配 | 锁屏密码 · 数字圆环 |
+| :-: | :-: |
+|  |  |
+| **整机搭配参考**：包含系统主题及其他美化组件，图中全部外观并非均由 HyperLocks 单一模块提供。 | **密码圆环效果**：独立模块开发阶段的锁屏数字密码圆环视觉样式。 |
+
+### 通知中心视觉定制
+
+| 通知卡片样式 | 日期、大时钟与背景 |
+| :-: | :-: |
+|  |  |
+| **通知卡片细节**：展示通知卡片的圆角弧度、细微描边与半透明层级效果。 | **无通知状态布局**：展示顶部日期、大时钟排版及圆角模糊背景效果。 |
 
 ### 控制中心顶栏细节
 
-<img src="showcase-control-header.jpg" alt="开发阶段控制中心顶栏按钮、双卡名称及状态图标实机细节" width="680">
+| 控制中心顶栏组合效果 |
+| :-: |
+|  |
+| **顶栏整体组合效果**：包含模糊背景、异形修饰框、时间/网络/电量状态组件以及快捷功能按钮布局。 |
 
-开发阶段实机细节：顶栏按钮、双卡名称及状态图标布局，最终效果随系统、主题与配置变化。
+## 兼容性与环境要求
 
-## 下载
+| 环境维度 | 要求与版本信息 |
+| :--- | :--- |
+| **操作系统** | Xiaomi HyperOS（基于 Android） |
+| **框架要求** | LSPosed / Xposed 兼容框架 |
+| **当前版本** | `v1.6.0` · 界面升级公开测试版（完整版本号 `20261015.1.6.0`，Version Code `52`） |
+| **基准版本** | 适配并基于 `1.5.2` / `1.6.0` 构建 |
 
-在本仓库的 [Releases](../../releases) 下载 APK。首个公开版本为 **1.6.0**（完整版本号 `20261015.1.6.0`，版本代码 52）。
+## 获取与安装说明
 
-本版本尚未完成全面真机验证，按公开测试版发布。请保留原配置备份，勿用于没有恢复手段的设备。
+1. **下载安装包**：前往本仓库 [Releases 页面](https://www.google.com/search?q=https%3A%2F%2Fgithub.com%2Fhydphalen%2FHyperLocks%2Freleases%2Ftag%2Fv1.6.0) 下载最新发布的 `.apk` 安装包。
+2. **校验文件完整性**：安装前建议对比根目录或 Release 附件中的 [SHA256SUMS](https://www.google.com/search?q=.%2FSHA256SUMS) 校验值，确保安装包与源码补丁完整无篡改。
+3. **激活模块**：安装 APK 后，在 **LSPosed 管理器**中启用 `HyperLocks` 模块，勾选对应系统作用域并重启相关作用域进程或设备。
+4. **问题排查**：如遇功能异常，可通过模块内置的**日志与管理**功能导出运行日志（含版本号、设备信息与时间戳）以便定位问题。
 
-## 功能
+## 源码与构建说明
 
-- 锁屏：自定义锁屏、负一屏、小组件页、壁纸与解锁样式、卡片、AOD 与隐藏选项。
-- 密码：数字圆环素材预览、样式选择、自定义素材与滑动电源菜单。
-- 状态栏：图标样式、顺序与布局、隐私提示、控制中心顶栏按钮。
-- 通知中心：iOS 风格通知面板及相关选项。
-- 设置：设置与我的设备界面的背景、样式、设备信息定制。
-- 管理：运行日志导出、按模块导入导出配置、重启作用域、隐藏桌面入口。
-- 额外功能：原生助理与游戏界面加速修复独立开关。
+> [!IMPORTANT]
+> 本仓库当前尚未在根目录整合完整的独立 Gradle 源码工程，请仔细阅读以下构建与产物说明：
 
-## 使用前提
+- **增量源码包 (`source-patch.zip`)**：[Releases](https://www.google.com/search?q=https%3A%2F%2Fgithub.com%2Fhydphalen%2FHyperLocks%2Freleases%2Ftag%2Fv1.6.0) 附件中的 `source-patch.zip` 包含了 `1.6.0` 界面升级的 Kotlin 增量源码、编译支持文件、验证工具及增量打包资料。该增量包基于 `1.5.2` 版本制作，本身**不是**完整的独立 Gradle 工程。
+- **编译桩文件限制**：增量包中仅供编译期通过的桩文件（Stub files）**严禁打入最终 APK**。
+- **非界面实现与隐私边界**：`1.6.0` 版本 APK 保留了 `1.5.2` 的非界面底层实现；公开的发布资料不包含签名私钥、个人用户配置或本地完整构建环境。
+- **切勿误用默认源码包**：请勿将 GitHub Release 自动生成的 `Source code (zip)` / `Source code (tar.gz)` 当作完整可编译工程使用。
 
-- APK 最低系统版本为 Android 14；最低版本不代表所有机型或系统版本都已适配。
-- 需要支持 libxposed API 102 的 LSPosed 环境。
-- 功能可用性取决于 HyperOS 对应组件、系统版本与机型，部分选项仅在支持的系统上显示。
-- 应用内重启作用域功能需要 Root。修改系统界面前应具备停用模块或恢复设备的能力。
+## 仓库目录结构
 
-## 安装与激活
+```text
+HyperLocks/
+├── CHANGELOG.md                   # 版本演进与更新日志
+├── LICENSE-HyperTweak.txt         # GPL-3.0 开源许可协议文本
+├── README.md                      # 项目说明文档
+├── SHA256SUMS                     # 发布产物 SHA-256 哈希校验清单
+├── THIRD_PARTY_NOTICES.md         # 第三方组件与致谢声明
+├── showcase-control-center.jpg    # 实机展示：控制中心整机搭配
+├── showcase-control-header.jpg    # 实机展示：控制中心顶栏细节
+├── showcase-notification-cards.jpg# 实机展示：通知中心卡片效果
+├── showcase-notification-clock.jpg# 实机展示：通知中心日期与大时钟
+└── showcase-password-rings.jpg    # 实机展示：锁屏密码数字圆环
+```
 
-1. 安装 APK，在 LSPosed 中启用 HyperLocks。
-2. 按使用的功能勾选作用域；不要无差别勾选所有应用。
-3. 重启手机或对应作用域，以载入新代码。
-4. 自定义锁屏建议使用系统默认主题，并停用重复修改相同位置的旧模块。
-5. 在功能页配置选项，保存后用右上角重启入口选择对应作用域。
+## 致谢与许可协议
 
-### 作用域
-
-| 功能 | 对应应用 |
-| --- | --- |
-| 锁屏、密码、状态栏、通知中心 | 系统界面 `com.android.systemui` |
-| 设置定制 | 系统设置 `com.android.settings` |
-| 息屏相关功能 | 息屏显示 `com.miui.aod`；部分功能同时涉及系统界面 |
-| 负一屏设备中心 | 小米互联服务 `com.milink.service` |
-| 主题组件同步 | 小米桌面 `com.miui.home`、智能助理 `com.miui.personalassistant` |
-| 游戏界面加速修复 | 安全中心 `com.miui.securitycenter` |
-
-状态栏配置保存后需重启系统界面才能完整生效；1.5.2 起不再自动整体刷新状态栏图标。切换负一屏模式后建议重启手机。
-
-## 1.6.0 界面结构
-
-- 首页：系统版本卡片下方刷新状态；额外功能独立入口；运行日志支持导出。
-- 锁屏：小组件设置、锁屏样式设置、锁屏卡片设置、锁屏更多设置、AOD与隐藏。主题组件同步位于底部。
-- 锁屏卡片设置：日期时间至底部卡片、StandBy 至快捷方式，分为两个大框。
-- 密码：预览更名为“锁屏密码界面预览”，移除旧适配提示。
-- 设置：“设置应用”内四项开关移至二级页面。
-- 关于：大幅 HyperLocks 标识、完整使用说明及底部作者信息。
-
-完整使用说明可在应用的“关于 → 使用说明”中查看。
-
-## 日志与反馈
-
-在首页进入“运行日志”，刷新后导出。反馈问题时请注明模块版本、系统版本、机型、复现步骤及相关日志。发布日志前自行检查并移除个人信息。
-
-首页接入记录是上次接入结果，不等于所有功能都已通过当前设备的实时测试。
-
-## 源码说明
-
-Release 中的 `source-patch.zip` 包含本次界面升级的 Kotlin 增量源码、编译支持、验证工具和增量打包资料，基于 **1.5.2**，不是完整的独立 Gradle 工程。仅供编译的桩文件不能打入 APK。
-
-本次 APK 保留了 1.5.2 的非界面实现；发布资料未包含签名私钥、用户配置或本地完整构建环境。完整源码工程尚未在此仓库整合，请勿把 GitHub 自动生成的 Source code 压缩包当作完整工程。
-
-## 第三方项目
-
-HyperLocks 基于上游部分功能，针对 HyperLocks 的设备适配与整体架构进行了深度修改；具体改动程度因功能而异，不宣称完全由本项目原创。
-如 HyperTweak 来源与同步版本见 [第三方说明](THIRD_PARTY_NOTICES.md)，GPL v3 许可原文见 [LICENSE-HyperTweak.txt](LICENSE-HyperTweak.txt)。
-部分相关源码保留原始 Apache-2.0 署名；
-Miuix 等依赖各自适用原项目许可。
-本仓库的发布与来源清单仍会继续整理，不以单一自定义许可覆盖第三方代码。
-
-## 验证范围
-
-1.6.0 已完成 Kotlin/Compose 编译、DEX 引用核对、重复类检查、APK 签名与对齐检查。尚无本次构建的完整真机触摸测试或截图验证记录；编译成功不代表所有设备兼容。
+- **开源许可协议**：本项目遵循 [GPL-3.0 License](https://www.google.com/search?q=.%2FLICENSE-HyperTweak.txt) 开源许可协议。
+- **第三方声明与致谢**：关于上游基础与第三方开源组件声明，请参阅仓库中的 [THIRD\_PARTY\_NOTICES.md](https://www.google.com/search?q=.%2FTHIRD_PARTY_NOTICES.md) 及 [LICENSE-HyperTweak.txt](https://www.google.com/search?q=.%2FLICENSE-HyperTweak.txt)。
