@@ -73,7 +73,11 @@ Release 中的 `source-patch.zip` 包含本次界面升级的 Kotlin 增量源�
 
 ## 第三方项目
 
-HyperLocks 集成了第三方项目的部分功能，不宣称全部由本项目原创。HyperTweak 来源与同步版本见 [第三方说明](THIRD_PARTY_NOTICES.md)，GPL v3 许可原文见 [LICENSE-HyperTweak.txt](LICENSE-HyperTweak.txt)。设置界面相关源码保留原始 Apache-2.0 署名；Miuix 等依赖各自适用原项目许可。本仓库的发布与来源清单仍会继续整理，不以单一自定义许可覆盖第三方代码。
+HyperLocks 基于上游部分功能，针对 HyperLocks 的设备适配与整体架构进行了深度修改；具体改动程度因功能而异，不宣称完全由本项目原创。
+如 HyperTweak 来源与同步版本见 [第三方说明](THIRD_PARTY_NOTICES.md)，GPL v3 许可原文见 [LICENSE-HyperTweak.txt](LICENSE-HyperTweak.txt)。
+部分相关源码保留原始 Apache-2.0 署名；
+Miuix 等依赖各自适用原项目许可。
+本仓库的发布与来源清单仍会继续整理，不以单一自定义许可覆盖第三方代码。
 
 ## 验证范围
 
