@@ -1,0 +1,13 @@
+# Keep signing material, configuration backups and local build products private.
+*.jks
+*.keystore
+*.key
+*.pem
+local.properties
+.gradle/
+.kotlin/
+build/
+out/
+*.log
+*-backup.zip
+host-stubs.jar
