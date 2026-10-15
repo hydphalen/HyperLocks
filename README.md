@@ -23,6 +23,23 @@
   </tr>
 </table>
 
+### 通知中心
+
+<table>
+  <tr>
+    <th>通知卡片</th>
+    <th>日期、时钟与背景</th>
+  </tr>
+  <tr>
+    <td><img src="showcase-notification-cards.jpg" alt="通知中心实机效果：圆角通知卡片与半透明背景" width="300"></td>
+    <td><img src="showcase-notification-clock.jpg" alt="通知中心实机效果：日期、大时钟、圆角面板与模糊背景" width="300"></td>
+  </tr>
+  <tr>
+    <td>通知卡片的圆角、描边与半透明效果。</td>
+    <td>日期、大时钟与圆角模糊背景，图中为无通知状态。</td>
+  </tr>
+</table>
+
 ### 控制中心顶栏细节
 
 <img src="showcase-control-header.jpg" alt="开发阶段控制中心顶栏按钮、双卡名称及状态图标实机细节" width="680">
